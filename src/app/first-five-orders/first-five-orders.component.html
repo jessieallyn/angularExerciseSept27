@@ -1,0 +1,4 @@
+<h6>These are the first 5 orders</h6>
+<ul *ngFor="let number of orders; let i = index" class="list-group list-group-flush">
+  <li *ngIf="i < 5">Order: {{number}}</li>
+</ul>
