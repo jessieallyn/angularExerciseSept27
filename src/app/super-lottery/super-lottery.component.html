@@ -1,0 +1,8 @@
+<div *ngIf="superLottery">
+  <h1>THE SUPER LOTTERY HAS BEGUN!</h1>
+  <div>
+    <ul>
+      <li *ngFor="let order of winner">Order {{ order }} is a winning order!!!</li>
+    </ul>
+  </div>
+</div>
