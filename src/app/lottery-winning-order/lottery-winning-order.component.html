@@ -1,0 +1,6 @@
+<h1 *ngIf="lottery">THE LOTTERY HAS BEGUN</h1>
+<div *ngIf="lottery">
+  <ul *ngFor="let order of orders; let i=index">
+    <li *ngIf="((i+1) % 7 == 0 )">Order {{order}} is a winning order!!!</li>
+  </ul>
+</div>
