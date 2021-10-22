@@ -14,9 +14,9 @@ export class AppComponent {
   instructions: string ="press start to begin work day";
   lottery: boolean = false;
   superLottery: boolean = false;
-  // winningOrder: number;
-  // winningOrders: number[];
-  // lotteryTimer;
+  winningOrder: number;
+  winningOrders: number[];
+  lotteryTimer;
 
   constructor() {
   }
@@ -50,15 +50,10 @@ export class AppComponent {
     this.lottery = true;
   }
 
-//   initializeSuperLottery() {
-//     this.superLottery = true;
-//     this.lotteryTimer = setInterval(() => {
-//     if (this.ordersArray.length % 20 == 0) {
-//       this.winningOrders.push(
-//       this.ordersArray[Math.floor(Math.random() * this.ordersArray.length)])
-//     }
-//   }, 10000);
-// }
-
-
+  initializeSuperLottery() {
+    this.superLottery = true;
+    if (this.ordersArray.length >2) {
+      this.winningOrder = this.ordersArray[Math.floor(Math.random() * this.ordersArray.length)]
+    }
+  }
 }
