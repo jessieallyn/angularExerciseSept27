@@ -11,7 +11,7 @@ export class SuperLotteryComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+
 
 }
